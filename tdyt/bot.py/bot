@@ -1,0 +1,54 @@
+from telegram import Update, ParseMode
+from telegram.ext import Updater, CommandHandler, CallbackContext
+
+# === CONFIG ===
+TOKEN = "Blackout crypto Vip Bot"  # Replace with your new token
+
+# === COMMAND: /start ===
+def start(update: Update, context: CallbackContext):
+    msg = (
+        "👋 Welcome to *blackout crypto vip Bot*!\n\n"
+        "📚 Get access to premium trading courses.\n"
+        "🔗 Earn with top app referrals.\n\n"
+        "Use:\n"
+        "/courses – View trading courses\n"
+        "/apps – Get referral links"
+    )
+    update.message.reply_text(msg, parse_mode=ParseMode.MARKDOWN)
+
+# === COMMAND: /courses ===
+def courses(update: Update, context: CallbackContext):
+    msg = (
+        "🎓 *Premium Trading Courses:*\n\n"
+        "1. *Crypto Mastery* - Learn from scratch to pro.\n"
+        "👉 [Available soon.]\n\n"
+        
+    )
+    update.message.reply_text(msg, parse_mode=ParseMode.MARKDOWN)
+
+# === COMMAND: /apps ===
+def apps(update: Update, context: CallbackContext):
+    msg = (
+        "📲 *Top Trading App Referrals:*\n\n"
+        "🔹 *Binance* – [Join Now](https://your-binance-ref-link.com)\n"
+        "🔹 *Bybit* – [Sign Up](https://your-bybit-ref-link.com)\n"
+        "🔹 *KuCoin* – [Get Started](https://your-kucoin-ref-link.com)\n"
+        "🔹 *TradingView* – [Try Pro](https://your-tradingview-ref-link.com)"
+    )
+    update.message.reply_text(msg, parse_mode=ParseMode.MARKDOWN)
+
+# === MAIN ===
+def main():
+    updater = Updater(token=7940204027:AAH3lTgEM_VGlkqYfq-tyROVL0QcEyg_Ol0, use_context=True)
+    dp = updater.dispatcher
+
+    dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("courses", courses))
+    dp.add_handler(CommandHandler("apps", apps))
+
+    updater.start_polling()
+    print("🚀 Bot is live. Use /start, /courses, /apps")
+    updater.idle()
+
+if __name__ == '__main__':
+    main()

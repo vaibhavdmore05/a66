@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background: #0d1321;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+.hero .btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about, .contact {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background: #0d1321;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #0d1321;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}/* Hamburger icon */
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.menu-icon div {
+    background-color: #fff;
+    height: 3px;
+    border-radius: 2px;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #0d1321;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}

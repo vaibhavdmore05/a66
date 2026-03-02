@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Courses - Learn at Your Own Pace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Quick Courses</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Learn from the Best, Anytime, Anywhere</h2>
+        <p>Join thousands of learners worldwide and start your journey today.</p>
+        <a href="#courses" class="cta-button">Browse Courses</a>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Popular Courses</h2>
+        <div class="course-container">
+            <div class="course">
+                <img src="https://via.placeholder.com/300" alt="Course Image">
+                <h3>Course Title 1</h3>
+                <p>Learn the basics of web development in just a few weeks!</p>
+                <a href="#" class="course-button">Enroll Now</a>
+            </div>
+            <div class="course">
+                <img src="https://via.placeholder.com/300" alt="Course Image">
+                <h3>Course Title 2</h3>
+                <p>Master advanced JavaScript and take your skills to the next level.</p>
+                <a href="#" class="course-button">Enroll Now</a>
+            </div>
+            <div class="course">
+                <img src="https://via.placeholder.com/300" alt="Course Image">
+                <h3>Course Title 3</h3>
+                <p>Get started with data science using Python and machine learning.</p>
+                <a href="#" class="course-button">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Why Quick Courses?</h2>
+        <p>We offer high-quality, affordable courses designed to help you succeed. Our platform allows you to learn at your own pace and on your schedule.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <textarea id="message" placeholder="Enter your message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Quick Courses. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
